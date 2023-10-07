@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-blur {
+  backdrop-filter: blur(1px); /* Adjust the blur strength as needed */
+  background-color: rgba(
+    44,
+    43,
+    43,
+    0.8
+  ); /* Adjust the background color and opacity as needed */
+}
