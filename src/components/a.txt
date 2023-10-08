@@ -1,0 +1,123 @@
+{/* <header id="mobile_head" className="pix-header pix-header-mobile d-inline-block pix-header-normal pix-scroll-shadow sticky-top header-scroll2 bg-gray-1">
+                <div className="container">
+                    <nav className="navbar navbar-hover-drop navbar-expand-lg navbar-light d-inline-block2">
+                        <div className="slide-in-container d-flex align-items-center">
+                            <div className="d-inline-block slide-in-container pix-waiting animated ms-5 ps-3" data-anim-type="slide-in-up">
+                                <Link className="navbar-brand" to="/" rel="home">
+                                    <img src="http://www.mentorsity.com/wp-content/uploads/2021/04/150-e1618507145769.png" alt="Mentorsity" style={{ height: "37px", width: "auto" }} />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="d-inline-block pix-px-5 mx-3">
+                            <div className="pix-header-divider" ></div>
+                        </div>
+                        <button class="navbar-toggler hamburger--spin hamburger small-menu-toggle d-flex d-lg-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNav-743" aria-controls="navbarNav-743" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner bg-body-default">
+                                    <span class="hamburger-inner-before bg-body-default"></span>
+                                    <span class="hamburger-inner-after bg-body-default"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <div id="navbarNav-556" className="navbar-collapse align-self-stretch collaps ps-5 ms-5">
+                            <ul id="menu-default-essentials-menu-1"
+                                className="navbar-nav nav-style-megamenu align-self-stretch align-items-center">
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-23744 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center ">
+                                    <Link title="About-Us" className="text-body-default font-weight-bold pix-nav-link nav-link pix-waiting animating-init animating fade-in mx-3" target="_self" to="/AboutUs" data-anim-type="fade-in" >
+                                        <span className="pix-dropdown-title text-sm pix-header-text">About-Us</span>
+                                    </Link>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-14230 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center mx-2">
+                                    <Link title="Attend" className="text-body-default font-weight-bold pix-nav-link dropdown-toggle nav-link pix-waiting animating-init animating fade-in" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-item-dropdown-14230" data-anim-type="fade-in" >
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">Attend</span>
+                                    </Link>
+                                    <div className="dropdown-menu" aria-labelledby="menu-item-dropdown-14230" role="menu">
+                                        <div className="submenu-box pix-default-menu bg-white">
+                                            <div className="container">
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-14145 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="MIND :" className="text-body-default font-weight-bold pix-nav-link  dropdown-item " target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">MIND :</span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-19004 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center">
+                                    <Link title="Our Product" className="text-body-default font-weight-bold pix-nav-link dropdown-toggle nav-link pix-waiting animating-init animating fade-in mx-2" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-item-dropdown-19004" data-anim-type="fade-in">
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">Our Product</span>
+                                    </Link>
+                                    <div className="dropdown-menu" aria-labelledby="menu-item-dropdown-19004" role="menu">
+                                        <div className="submenu-box pix-default-menu bg-white">
+                                            <div className="container">
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19005 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="HiKi" className="text-body-default font-weight-bold pix-nav-link  dropdown-item" target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">HiKi</span>
+                                                    </Link>
+                                                </div>
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19006 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="KYC" className="tLinkxt-body-default font-weight-bold pix-nav-link  dropdown-item" target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">KYC</span>
+                                                    </Link>
+                                                </div>
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19007 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="Prepattern" className="text-body-default font-weight-bold pix-nav-link  dropdown-item" target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">Prepattern</span>
+                                                    </Link>
+                                                </div>
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19008 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="PuPa" className="text-body-default font-weight-bold pix-nav-link  dropdown-item" target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">PuPa</span>
+                                                    </Link>
+                                                </div>
+                                                <div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19009 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center w-100">
+                                                    <Link title="Mentoring" className="text-body-default font-weight-bold pix-nav-link  dropdown-item" target="_self" to="/" data-anim-type="fade-in">
+                                                        <span className="pix-dropdown-title  text-body-default  font-weight-bold">Mentoring</span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19015 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center">
+                                    <Link title="College"
+                                        className="text-body-default font-weight-bold pix-nav-link nav-link pix-waiting animating-init animating fade-in mx-2" target="_self" to="/collage" data-anim-type="fade-in">
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">College</span>
+                                    </Link>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19011 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center">
+                                    <Link title="Corporate" className="text-body-default font-weight-bold pix-nav-link nav-link pix-waiting animating-init animating fade-in mx-2" target="_self" to="/" data-anim-type="fade-in">
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">Corporate</span>
+                                    </Link>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-19010 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center">
+                                    <Link title="Browse Mentor" className="text-body-default font-weight-bold pix-nav-link nav-link pix-waiting animating-init animating fade-in mx-2" target="_self" to="/" data-anim-type="fade-in">
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">Browse Mentor</span>
+                                    </Link>
+                                </li>
+                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                                    className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item active menu-item-25787 nav-item dropdown d-md-flex align-self-stretch overflow-visible align-items-center">
+                                    <Link title="Community" className="text-body-default font-weight-bold pix-nav-link nav-link pix-waiting animating-init animating fade-in" target="_self" to="/Community" data-anim-type="fade-in">
+                                        <span className="pix-dropdown-title text-sm  pix-header-text">Community</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="d-inline-flex align-items-center d-inline-block2 text-sm mb-0">
+                            <Link data-anim-type="disabled" className="btn btn-orange btn-rounded btn-sm pix-py-10 font-weight-bold d-flex align-items-center mr-0" href="https://mentorsity.com/login-signup">
+                                <span>Login</span>
+                            </Link>
+                        </div>
+                    </nav>
+                </div>
+            </header> */}
