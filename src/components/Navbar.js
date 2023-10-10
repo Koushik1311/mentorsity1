@@ -68,6 +68,11 @@ const styles = {
         ...navbarTogglerLineProperties,
         transform: 'translate(-50%, -50%) rotate(-45deg)',
     },
+    collapse:{
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        marginRight: "10px"
+    }
 }
 
 const ImageWithAnimation = styled.img`
@@ -112,7 +117,7 @@ export default function Navbar() {
                         )}
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" style={styles.collapse} >
                         <ul className="navbar-nav ">
                             <li className="menu-item  nav-item  ms-4" style={{ whiteSpace: 'nowrap' }}>
                                 <Link title="About-Us" className="nav-link " to="/AboutUs" style={styles.weights}>
