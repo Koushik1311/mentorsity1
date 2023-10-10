@@ -1,42 +1,28 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
-import {FaTwitter} from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
-import { FaYoutube } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaLinkedin} from 'react-icons/fa'
-import { IoLocationOutline } from 'react-icons/io5';
+import Community2 from './Community2'
+import Community3 from './Community3'
+import Community4 from './Community4'
+
+
 
 const styles = {
+  title: {
+    fontSize: "36px", fontWeight: "700", textTransform: 'capitalize',
+    fontStyle: 'normal', lineHeight: "48px", fontFamily: 'nunito, sans-serif',
+    letterSpacing: '- 0.02rem',
+  },
+  h2Title: {
+    margin: '0px 0', alignItem: 'left'
+  },
+  div3Title: {
+    marginBottom: '50px', display: 'block', marginTop: 70,
+  },
   mainContainer: {
-    backgroundColor: "#f8f9fa",
-    width: "100%",
-    paddingTop: 5,
-    height: 40,
+    fontFamily: 'nunito, sans-serif', widht: "100%",
+    border: '1px solid white', backgroundColor: "#f8f9f1"
   },
-  icons:{
-    color: 'black',
-    marginRight: 20,
-    textDecoration: 'none'
-  },
-  iconContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end', // Align icons to the right
-  },
-  contentContainer: {
-    display: 'flex',
-    justifyContent: 'space-between', // Space between "India" and icons
-    alignItems: 'center', // Center vertically
-  },
-  number:{
-    color:'black',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    marginRight: 20,
-    alignItems: 'center',
-  }
 }
 
 export default function Community() {
@@ -44,31 +30,17 @@ export default function Community() {
   return (
     <>
       <Navbar />
-      <div
-        style = {styles.mainContainer}
-       >
-        <div className="container">
-          <div className="container" style={styles.contentContainer}>
-            <div >
-              <div>
-                <IoLocationOutline />
-                {/* <FontAwesomeIcon icon="fa-sharp fa-solid fa-location-dot" /> */}
-                India
-              </div>
-            </div>
-            <div style={styles.iconContainer}>
-              <Link to="tel:+919582073315" style={styles.number} > +919582073315</Link>
-              
-              <div>
-                <Link target="_self" to="https://www.facebook.com/Mentorsity" title="Facebook" style={styles.icons}> <FaFacebook size={18} /> </Link>
-                <Link target="_self" to="https://twitter.com/mentorsity1" title="twitter" style={styles.icons} > <FaTwitter size={18} /></Link>
-                <Link target="_self" to="https://www.youtube.com/c/Mentorsity" title="youtube" style={styles.icons}> <FaYoutube size={18} /> </Link>
-                <Link target="_self" to="https://www.linkedin.com/company/mentotorsity" title="linkedin" style={styles.icons}> <FaLinkedin size={18} /> </Link>
-                <Link target="_self" to="https://www.instagram.com/mentorsity/" title="instagram" style={styles.icons}><FaInstagram size={18} /> </Link>
-              </div>
-            </div>
-          </div>
+      <Community2 />
+      <Community3 />
+
+      <div style={styles.mainContainer} >
+        <div style={styles.div3Title} >
+          <h2 class="title" style={styles.h2Title} >
+            <span style={{ ...styles.title, color: '#f7bc59', marginRight: 10 }} >Mentorsity</span>
+            <span style={{ ...styles.title, color: '#003777' }}>Community</span>
+          </h2>
         </div>
+        <Community4 />
       </div>
     </>
   )

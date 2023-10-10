@@ -1,62 +1,19 @@
-.bg-transparent {
-    background-color: transparent !important;
-}
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    font-weight: 300;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-}
-
-.header-scroll {
-    padding: 20px;
-    -webkit-transition: all .6s cubic-bezier(.165, .84, .44, 1);
-    transition: all .6s cubic-bezier(.165, .84, .44, 1);
-    z-index: 998;
-}
 .d-inline-block {
     display: inline-block !important;
 }
 
 body {
     font-family: nunito, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-    font-display: swap;
     width: 100%;
 }
 
-.nav-style-megamenu>li.nav-item .nav-link span {
-    position: relative;
-}
-
-.navbar-light.navbar-nav.nav-link.text-body-default,
 .text-body-default {
     color: #343434 !important;
-}
-
-.nav-style-megamenu>li.nav-item .nav-link {
-    position: relative;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
     list-style: none;
 }
 
@@ -96,21 +53,11 @@ body {
     border-color: rgb(200, 122, 4);
 }
 /*  */
-
-
-@media all and (min-width: 100%) {
-    .navbar .nav-item .dropdown-menu {
-        display: none;
-    }
-    .navbar .nav-item:hover .dropdown-menu {
-        display: block;
-    }
-    .navbar .nav-item .dropdown-menu {
-        margin-top: 18px;
-        border: 0px solid #ddd;
-        box-shadow: 2px 2px 2px 2px rgba(28, 25, 25, 0.1);
-        border-radius: 5px;
-    }
+.dropdown-menu {
+    margin-top: 15px;
+    border: 0px solid #ddd;
+    box-shadow: 0 0 30px 10px rgba(39, 34, 34, 0.1);
+    border-radius: 8px;
 }
 
 .dropdown-toggle::after {
@@ -123,11 +70,6 @@ body {
     top: 100%;
     left: 0;
     z-index: 1000;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 10px;
-    margin-left: 15px;
 }
 
 .navbar-toggler {

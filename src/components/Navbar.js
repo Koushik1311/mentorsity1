@@ -15,7 +15,7 @@ const navbarTogglerLineProperties = {
 
 const slideInFromBottom = keyframes`
       from {
-        transform: translateY(50px);
+        transform: translateY(20px);
         opacity: 0;
       }
       to {
@@ -23,6 +23,12 @@ const slideInFromBottom = keyframes`
         opacity: 1;
       }
     `;
+
+const StickyNavbar = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 100;
+`;
 
 const styles = {
     textsm: {
@@ -35,7 +41,8 @@ const styles = {
         animationDelay: '0.5s'
     },
     weights: {
-        fontWeight: 550,
+        fontWeight: 550, display: 'block', padding:'0.5rem 0.9rem',
+        marginRight: '10px', textDecoration: 'none'
     },
     buttons: {
         textAlign: 'center',
@@ -72,7 +79,7 @@ const styles = {
         alignItems: 'center',
         justifyContent: 'flex-end',
         marginRight: "10px"
-    }
+    },
 }
 
 const ImageWithAnimation = styled.img`
@@ -91,10 +98,10 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-white">
+            <StickyNavbar className="navbar navbar-expand-lg bg-white"  >
                 <div className="container-fluid">
                     <div className="slide-in-container d-flex me-5">
-                        <div className="d-inline-block slide-in-container slide-in-animation ms-5 ps-3 me-5" data-anim-type="slide-in-up">
+                        <div className="d-inline-block slide-in-container slide-in-animation ms-5 ps-3 me-5" >
                             <Link className="navbar-brand me-5" to="/" rel="home">
                                 <ImageWithAnimation src="http://www.mentorsity.com/wp-content/uploads/2021/04/150-e1618507145769.png" alt="Mentorsity" style={styles.logoStyle} />
                             </Link>
@@ -119,22 +126,22 @@ export default function Navbar() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent" style={styles.collapse} >
                         <ul className="navbar-nav ">
-                            <li className="menu-item  nav-item  ms-4" style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="About-Us" className="nav-link " to="/AboutUs" style={styles.weights}>
+                            <li className="menu-item    ms-4" style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="About-Us" to="/AboutUs" style={styles.weights}>
                                     <span className="pix-header-text" style={styles.textsm}>About-Us</span>
                                 </Link>
                             </li>
 
-                            <li className="nav-item dropdown" style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="Attend" className="  dropdown-toggle nav-link  "
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={styles.weights}  >
+                            <li className=" dropdown" style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="Attend" className="dropdown-toggle "
+                                    data-toggle="dropdown" style={styles.weights}  >
                                     <span className="pix-header-text" style={styles.textsm}>Attend</span>
                                 </Link>
-                                <UlWithAnimation className="dropdown-menu" aria-labelledby="menu-item-dropdown-14230" role="menu">
+                                <UlWithAnimation className="dropdown-menu" >
                                     <div className="submenu-box pix-default-menu bg-white ">
-                                        <div className="container">
-                                            <div className="menu-item  nav-item dropdown">
-                                                <Link title="MIND" className="dropdown-item" to="/" style={styles.weights} >
+                                        <div className="container"  >
+                                            <div className="menu-item dropdown">
+                                                <Link title="MIND" className="dropdown-item" to="/" style={{...styles.weights}} >
                                                     <span style={styles.textsm}>MIND</span>
                                                 </Link>
                                             </div>
@@ -143,35 +150,35 @@ export default function Navbar() {
                                 </UlWithAnimation>
                             </li>
 
-                            <li className="nav-item dropdown" style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="Our Product" className="nav-link dropdown-toggle   nav-link "
+                            <li className=" dropdown" style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="Our Product" className=" dropdown-toggle    "
                                     data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" style={styles.weights} >
                                     <span className="pix-header-text " style={styles.textsm}>Our Product</span>
                                 </Link>
                                 <UlWithAnimation className="dropdown-menu" aria-labelledby="menu-item-dropdown-19004" role="menu">
                                     <div className="submenu-box pix-default-menu bg-white">
                                         <div className="container">
-                                            <div className="menu-item nav-item dropdown">
-                                                <Link title="HiKi" className="  dropdown-item" to="/" style={styles.weights}>
+                                            <div className="menu-item  dropdown">
+                                                <Link title="HiKi" className="dropdown-item" to="/" style={styles.weights}>
                                                     <span style={styles.textsm} >HiKi</span>
                                                 </Link>
                                             </div>
-                                            <div className="menu-item nav-item dropdown ">
+                                            <div className="menu-item dropdown ">
                                                 <Link title="KYC" className="  dropdown-item" to="/" style={styles.weights} >
                                                     <span style={styles.textsm}>KYC</span>
                                                 </Link>
                                             </div>
-                                            <div className="menu-item nav-item dropdown ">
+                                            <div className="menu-item  dropdown ">
                                                 <Link title="Prepattern" className="  dropdown-item" to="/" style={styles.weights} >
                                                     <span style={styles.textsm}>Prepattern</span>
                                                 </Link>
                                             </div>
-                                            <div className="menu-item nav-item dropdown ">
+                                            <div className="menu-item  dropdown ">
                                                 <Link title="PuPa" className="  dropdown-item" to="/" style={styles.weights} >
                                                     <span style={styles.textsm} >PuPa</span>
                                                 </Link>
                                             </div>
-                                            <div className="menu-item nav-item dropdown ">
+                                            <div className="menu-item  dropdown ">
                                                 <Link title="Mentoring" className=" dropdown-item" to="/" style={styles.weights} >
                                                     <span style={styles.textsm} >Mentoring</span>
                                                 </Link>
@@ -180,23 +187,23 @@ export default function Navbar() {
                                     </div>
                                 </UlWithAnimation>
                             </li>
-                            <li className="menu-item  nav-item dropdown " style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="College" className="nav-link " to="/collage" style={styles.weights} >
+                            <li className="menu-item   dropdown " style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="College" to="/collage" style={styles.weights} >
                                     <span className="pix-header-text" style={styles.textsm} >College</span>
                                 </Link>
                             </li>
-                            <li className="menu-item  nav-item dropdown " style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="Corporate" className="nav-link " to="/" style={styles.weights} >
+                            <li className="menu-item   dropdown " style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="Corporate" to="/" style={styles.weights} >
                                     <span className="pix-header-text" style={styles.textsm} >Corporate</span>
                                 </Link>
                             </li>
-                            <li className="menu-item  nav-item dropdown " style={{ whiteSpace: 'nowrap' }}>
-                                <Link title="Browse Mentor" className="  nav-link " to="/" style={styles.weights} >
+                            <li className="menu-item   dropdown " style={{ whiteSpace: 'nowrap' }}>
+                                <Link title="Browse Mentor" to="/" style={styles.weights} >
                                     <span className="pix-header-text" style={styles.textsm} >Browse Mentor</span>
                                 </Link>
                             </li>
-                            <li className="menu-item  nav-item dropdown " style={{ whiteSpace: 'nowrap' }} >
-                                <Link title="Community" className="  nav-link " to="/Community" style={styles.weights} >
+                            <li className="menu-item   dropdown " style={{ whiteSpace: 'nowrap' }} >
+                                <Link title="Community" to="/Community" style={styles.weights} >
                                     <span className="pix-header-text" style={styles.textsm} >Community</span>
                                 </Link>
                             </li>
@@ -208,7 +215,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
-            </nav>
+            </StickyNavbar>
         </>
     )
 }
