@@ -1,6 +1,13 @@
 import React from 'react'
 import CardComponent from './CardComponent'
 
+const styles = {
+    cardContainer: {
+        display: 'flex', paddingLeft: 0, margin: 0, paddigRight: 0, marginLeft: 0,
+        marginRight: 0
+    },
+}
+
 export default function Community4() {
     const cards = [
         {
@@ -45,7 +52,7 @@ export default function Community4() {
     return (
         <section>
             <div>
-                <div className="row">
+                <div className="row" style={styles.cardContainer}>
                     {cards.map((item) => (
                         <CardComponent {...item} />
                     ))}

@@ -14,14 +14,14 @@ const styles = {
     letterSpacing: '- 0.02rem',
   },
   h2Title: {
-    margin: '0px 0', alignItem: 'left'
+    marginLeft: 40,
   },
   div3Title: {
     marginBottom: '50px', display: 'block', marginTop: 70,
   },
   mainContainer: {
     fontFamily: 'nunito, sans-serif', widht: "100%",
-    border: '1px solid white', backgroundColor: "#f8f9f1"
+    border: '1px solid white', backgroundColor: "#f8f9fa"
   },
 }
 
@@ -36,7 +36,7 @@ export default function Community() {
       <div style={styles.mainContainer} >
         <div style={styles.div3Title} >
           <h2 class="title" style={styles.h2Title} >
-            <span style={{ ...styles.title, color: '#f7bc59', marginRight: 10 }} >Mentorsity</span>
+            <span style={{ ...styles.title, color: '#f7bc59'}} >Mentorsity    </span>
             <span style={{ ...styles.title, color: '#003777' }}>Community</span>
           </h2>
         </div>

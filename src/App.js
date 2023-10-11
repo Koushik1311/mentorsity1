@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Router>
-
         <div className='container' >
           <Routes>
             <Route exact path="/" element={<Community />} />
