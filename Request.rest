@@ -1,0 +1,85 @@
+###Register User if not exist
+POST http://localhost:5000/api/rgt-usr
+Content-Type: application/json
+
+{
+    "name":"koushik1",
+    "phone":"9564207106",
+    "email":"roykoushik514@gmail.com",
+    "password":"User@123456"
+}
+
+###Login with email & Password
+
+POST http://localhost:5000/api/lgn-pwd/login-pwd
+Content-Type: application/json
+
+{
+    "email":"roykoushik514@gmail.com",
+    "password":"User@123456789"
+}
+#### Login using Registered phone number & Get Otp on mobile number
+POST http://localhost:5000/api/lgn-pwd/login-otp
+Content-Type: application/json
+
+{
+  "phone":"9564207106"
+}
+
+#### Verify Otp and login Successfully
+POST http://localhost:5000/api/lgn-pwd/login-otp/verify
+Content-Type: application/json
+
+{
+  "otp":"3325"
+}
+#### Change the password
+POST http://localhost:5000/api/lgn-pwd/change-password
+Content-Type: application/json
+
+{
+    "email":"roykoushik514@gmail.com",
+    "oldPassword":"User@1234",
+    "newPassword":"User@1234"
+}
+
+#### send mail for forgot the password
+POST http://localhost:5000/api/lgn-pwd/forgot-password
+Content-Type: application/json
+
+{
+    "email":"roykoushik514@gmail.com"
+}
+
+#### reset the password by using mail link
+GET  http://localhost:5000/api/lgn-pwd/reset-password?token=9ba2F3i7xVyH
+Content-Type: application/json
+
+{
+    "password":"User@123456789"
+}
+
+### All User Entry for only Handy-ways 
+GET http://localhost:5000/api/rgt-usr
+Content-Type: application/json
+
+### Deafult url
+GET http://localhost:5000/api/lgn-auth2.0
+Content-Type: application/json
+
+
+###### login with FB
+GET http://localhost:5000/api/lgn-auth2.0/login/facebook
+Content-Type: application/json
+
+
+#### logout from FB
+GET http://localhost:5000/api/lgn-auth2.0/logout
+Content-Type: application/json
+
+###### login with google
+GET http://localhost:5000/api/lgn-auth2.0/login/google
+Content-Type: application/json
+
+#### logout from google
+GET http://localhost:5000/api/lgn-auth2.0/logout
