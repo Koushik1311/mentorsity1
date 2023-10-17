@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Heebo&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Heebo", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2 {
+  font-family: "Barlow", sans-serif;
+  @apply text-gray-900;
+}
+
+p {
+  line-height: 1.8;
+  @apply text-gray-600;
+}
+
+.arrow-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.rotate-arrow {
+  transform: rotate(90deg);
+}
+
+.answer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+
+.slide-down-entering {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.slide-down-entered {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.slide-up-exiting {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.slide-up-exited {
+  max-height: 0;
+  opacity: 0;
+}
+
+
