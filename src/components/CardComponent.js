@@ -23,6 +23,7 @@ const styles = {
     },
     column: {
         display: 'flex', justifyContent: 'center', marginRight: 10, marginLeft: 10,
+        cursor: 'pointer',
     },
     svgStyle: {
         position: 'absolute', left: -45, top: -8, color: 'black'
