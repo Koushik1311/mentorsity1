@@ -1,3 +1,13 @@
+import AlumniProfile from "@/components/AlumniProfile";
+import AlumniWorkPlace from "@/components/AlumniWorkPlace";
+import TopUniversityPartners from "@/components/TopUniversityPartners";
+
 export default function Home() {
-  return <h1 className="font-lato text-3xl">Hello Home</h1>;
+  return (
+    <main>
+      <TopUniversityPartners />
+      <AlumniProfile />
+      <AlumniWorkPlace />
+    </main>
+  );
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { links } from "@/utils/Links";
+import { links } from "@/lib/Links";
 
 // For better understanding check Links.tsx file, File Path = "@/utils/Links.tsx"
 

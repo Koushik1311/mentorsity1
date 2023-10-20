@@ -1,4 +1,4 @@
-import { CoursesData } from "@/utils/Course";
+import { CoursesData } from "@/lib/Course";
 import Link from "next/link";
 
 // Props

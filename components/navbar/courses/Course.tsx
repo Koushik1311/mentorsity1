@@ -1,6 +1,6 @@
 "use client";
 
-import { courses } from "@/utils/Course";
+import { courses } from "@/lib/Course";
 import { useEffect, useState } from "react";
 import LinkCourse from "@/components/navbar/courses/LinkCourse";
 import CourseDetail from "@/components/navbar/courses/CourseDetail";

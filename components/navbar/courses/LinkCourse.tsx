@@ -1,4 +1,4 @@
-import { CoursesData } from "@/utils/Course";
+import { CoursesData } from "@/lib/Course";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 // Props
